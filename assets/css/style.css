@@ -998,6 +998,12 @@ footer{
         border-radius: 7px;
         display: inline;
     }
+
+    .nav-contactus-1 a{
+
+        text-decoration: none;
+        color: var(--white);
+    }
     
     nav{
         padding: 30px;
@@ -1280,6 +1286,12 @@ footer{
         padding: 3px 7px;
         border-radius: 7px;
         display: inline;
+    }
+
+    .nav-contactus-1 a{
+
+        text-decoration: none;
+        color: var(--white);
     }
     
     nav{
