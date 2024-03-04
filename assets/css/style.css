@@ -1,0 +1,861 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Poppins; */
+}
+:root {
+    --back: #F5F6FA;
+    --back2: #e9edf9;
+    --primry: #34A2B3;
+    --secoundery: #73D3E1;
+    --txtcolor:#393939;
+    --white:#ffffff;
+    --inactive:#6c6c6c;
+    --active:#000000;
+    --gradient: linear-gradient(180deg, #bdf6ff, #F8F9FD);
+
+  }
+body{
+
+    background-color: var(--back);
+}
+
+.container{
+
+    /* background-color: #F5F6FA; */
+    background-color: var(--back);
+    /* padding: 0px 10%; */
+    width: 80vw;
+    margin: auto;
+
+    display: grid;
+    grid-template-areas: 
+    'heading heading heading heading'
+    
+    'discription discription model model'
+    'buttons      buttons    model model'
+    'stacks       stacks     model model'
+    'special-services special-services special-services special-services'
+    'control control control control'
+    'project project project project'
+    'subscribe subscribe subscribe subscribe'
+    ;
+}
+
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: Poppins;
+    
+}
+
+nav{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+
+.nav-list{
+
+    display: flex;
+    gap: 50px;
+}
+
+.nav-logo{
+
+    font-weight: bold;
+    color: var(--primry);
+}
+
+.nav-contactus{
+
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--primry);
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.nav-list{
+    color:var(--inactive);
+    list-style-type: none;
+    font-weight: 600;
+
+}
+
+.nav-home{
+
+    color: var(--active);
+}
+
+.home-heading{
+
+    font-size: 4rem;
+    grid-area: heading;
+    font-family: Poppins-Bold;
+    color: var(--txtcolor);
+    line-height: 6.5rem;
+}
+
+
+.landing-discription{
+
+    grid-area: discription;
+    font-family: Poppins;
+    font-size: 1rem;
+    color: var(--inactive);
+}
+
+.landing-buttons{
+
+    display: flex;
+    align-items: center;
+    gap:80px;
+    grid-area: buttons;
+    font-family: Poppins;
+}
+
+.landing-get-btn{
+
+    color:var(--white);
+    border: var(--primry) solid 2px;
+    background-color: var(--primry);
+    padding: 5px 10px;
+    border-radius: 5px;    
+}
+
+.landing-about-btn{
+
+    color: var(--primry);
+    border: var(--primry) solid 2px;
+    padding: 5px 10px;
+    border-radius: 5px;    
+}
+
+.stacks{
+
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    text-align: center;
+    grid-area: stacks;
+}
+
+
+.stacks p{
+
+    color: var(--inactive);
+    font-family: Poppins;
+    font-size: .7rem;
+    
+}
+
+.stacks b{
+
+    color: var(--txtcolor);
+    font-family: Concert;
+    
+}
+
+
+.home-right{
+    width: 20rem;
+    position: relative;
+    height: 19rem;
+    grid-area: model;
+    /* background-color: #000000; */
+
+}
+
+.model-round{
+
+    width: 10rem;
+    height: 10rem;
+    /* background-color:#34A2B3; */
+    background-image: var(--gradient);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -90px;
+    
+}
+
+    
+
+.model-img{
+
+    width: 15.625rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.model-back{
+
+    width: 18.75rem;
+    height: 9.375rem;
+    background-color: var(--secoundery);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.model-wifi{
+    width: 110px;
+    height: 50px;
+    background-color:var(--white);
+    border-radius: 5px;
+    border: solid 1px #e5e4e5;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+
+    position: absolute;
+    left: -40px;
+    bottom: 70px;
+    
+}
+
+.model-wifi-icon{
+    width: 40px;
+    background-color: var(--primry);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+.model-wifi-p{
+    font-size: 14px;
+    color: var(--inactive);
+    margin: 5px;
+    font-weight: 600;
+}
+
+
+
+.model-multi{
+    width: 110px;
+    height: 50px;
+    background-color:var(--white);
+    border-radius: 5px;
+    border: solid 1px #e5e4e5;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+
+    position: absolute;
+    right: -50px;
+    top: 40px;
+
+    
+}
+
+.model-multi-icon{
+    width: 40px;
+    background-color: var(--primry);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.model-multi-p{
+    font-size: 14px;
+    color: var(--inactive);
+    margin: 5px;
+    font-weight: 600;
+}
+
+/* ************************************************ Our Special Service ********************************************** */
+.secial-services{
+
+    display: grid;
+    grid-template-areas: 
+    'services-h2 services-h2 services-h2'
+    'air-conctrol remot-conctrol security'
+    ;
+    grid-area: special-services;
+    
+}
+.services-h2{
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    grid-area: services-h2;
+    font-size: 2rem;
+    font-family: Poppins-Bold;
+    color: var(--txtcolor);
+}
+.air-conctrol{grid-area: air-conctrol;}
+.remot-conctrol{grid-area: remot-conctrol;}
+.security{grid-area: security;}
+
+.secial-services div{
+
+    background-color: var(--white);
+    border-radius: 1rem;
+    width: 20vw;
+    padding: 1rem;
+
+}
+
+.secial-services img{
+
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primry);
+    border-radius: .4rem;
+    padding: .3rem;
+
+}
+
+.secial-services b{
+    font-family: Poppins-Bold;
+    color: var(--txtcolor);
+    font-size: .8rem;
+
+}
+
+.secial-services p{
+
+    font-family: Poppins;
+    color: var(--inactive);
+    font-size: .7rem;
+
+}
+
+/* ************************************************ One Control ********************************************** */
+
+
+.control {
+    display: grid;
+    align-items: center;
+    margin-top: 3rem;
+    /* background-color: #34A2B3; */
+    height: 20rem;
+    grid-area: control;
+    grid-template-areas: 
+    
+    'control-img control-div'
+    'control-img contril-div';
+}
+
+.control img{
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 3rem;
+    grid-area: control-img;
+
+}
+
+
+.control div{
+
+    margin-left: 8rem;
+    grid-area: control-div;
+    /* background-color: #000000; */
+
+}
+
+.control h2{
+    font-size: 2rem;
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    
+
+}
+
+.control p{
+    font-size: 1rem;
+    font-family: Poppins;
+    color: var(--inactive);
+
+}
+
+
+div.btn-touch{
+    font-size: 1rem;
+    font-family: Poppins;
+    color: var(--white);
+    background-color: var(--primry);
+    border: solid 1px var(--primry);
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 5px;
+
+}
+
+/* ****************************************** Complete on Home Projects **************************************** */
+
+
+
+.home-project{
+
+    display: grid;
+    margin-top: 10rem;
+    grid-template-areas: 
+    'project-h2 project-h2 project-h2 project-h2'
+    'img1 img2 img3 img4'
+    ;
+    grid-area: project;
+}
+
+.home-project h2{
+    font-size: 2rem;
+    font-family: Poppins-Bold;
+    color: var(--txtcolor);
+    grid-area: project-h2;
+
+    margin-bottom: 2rem;
+}
+
+.home-project img{
+    width: 12rem;
+    border-radius: 1rem;
+}
+
+.proect-img1{grid-area: img1;}
+.proect-img2{grid-area: img2;}
+.proect-img3{grid-area: img3;}
+.proect-img4{grid-area: img4;}
+/* .proect-img5{grid-area: img5;} */
+
+
+
+/* ****************************************** Subscribe to Newslatter **************************************** */
+
+
+.subscribe{
+
+    display: grid;
+    margin-top: 5rem;
+    gap: 1.3rem;
+    align-items: center;
+
+    grid-area: subscribe;
+
+    grid-template-areas: 
+    'subscribe-h2 form'
+    'subscribe-h2 form'
+    ;
+}
+
+.subscribe h2{
+
+    font-size: 2rem;
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    word-spacing: .7rem;
+    grid-area: subscribe-h2;
+}
+
+.subscribe-form{
+
+    grid-area: form;
+}
+
+.subscribe input{
+
+    font-family: Poppins;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+
+    padding: 10px;
+    border-radius: .3rem;
+    border: 0px;
+
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+
+}
+
+.subscribe input:focus {
+
+    font-family: Poppins;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+
+    padding: 10px;
+    border-radius: .3rem;
+
+    border: solid 2px var(--primry);
+    
+
+}
+
+.submit{
+
+    color: var(--white);
+    background-color: var(--primry);
+    border: 0px;
+    border-radius: .3rem;
+
+}
+
+
+/* ********************************************** footr ******************************************************** */
+
+
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1ff;
+    
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer-social img{
+    width: 30px;
+    background-color: var(--primry);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+
+
+.footer-h3{
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    font-size: 1rem;
+}
+
+
+.footer-links{
+
+    text-decoration: none;
+    color: var(--inactive);
+    font-family: Poppins;
+    font-size: .8rem;
+}
+
+.footer-social h2{
+
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    margin-bottom: 40px;
+
+}
+
+.compny-help{
+
+    display: flex;
+    gap: 4rem;
+}
+.company a{
+
+    display: block;
+    margin: 10px;
+   
+}
+
+.get-help a{
+
+    display: block;
+    margin: 10px;
+
+}
+
+
+.support-app{
+
+    display: flex;
+    gap: 4rem;
+}
+
+.support a{
+
+    display: block;
+    margin: 10px;
+}
+
+.download a{
+
+    display: block;
+    margin: 10px;
+}
+
+
+/* ************************************************************************************************************ */
+
+@media screen and (max-width: 480px) {
+
+    
+.container{
+    /* background-color: var(--back); */
+    background-color: var(--back);
+    width: 100vw;
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-template-areas: 
+    'heading heading heading heading'
+    
+    'discription discription discription discription'
+    'model model model model'
+    'buttons      buttons    buttons buttons'
+    'stacks       stacks     stacks stacks'
+    'special-services special-services special-services special-services'
+    'control control control control'
+    'project project project project'
+    'subscribe subscribe subscribe subscribe'
+    ;
+}
+
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: Poppins;
+    height: 60px;
+    width: 100vw;
+    background-color: var(--primry);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    
+}
+
+.menu-icon{
+
+    width: 3rem;
+}
+
+.nav-contactus-1{
+
+    color: var(--white);
+    font-weight: bold;
+    /* background-color: var(--white); */
+    border: solid 2px var(--white);
+    padding: 3px 7px;
+    border-radius: 7px;
+}
+
+nav{
+    padding: 30px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.home-heading{
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 1.9rem;
+}
+
+.landing-discription{
+
+    font-size: .9rem;
+    margin-top: 1rem;
+}
+
+.home-right{
+    width: 20rem;
+    position: relative;
+    height: 19rem;
+    grid-area: model;
+    margin-left: 50px;
+    margin-top: 6rem;
+    /* background-color: #000000; */
+
+}
+
+.landing-buttons{
+
+    margin:auto;
+    margin-top: 2rem;
+}
+
+.stacks{
+
+    margin:auto;
+    margin-top: 2rem;
+}
+
+
+.secial-services{
+
+    display: grid;
+    grid-template-areas: 
+    'services-h2 services-h2 services-h2'
+    'air-conctrol air-conctrol air-conctrol'
+    'remot-conctrol remot-conctrol remot-conctrol'
+    'security security security'
+    ;
+    grid-area: special-services;
+
+    gap: 2rem;
+
+    /* margin-top: 2rem; */
+    
+}
+
+.secial-services div{
+
+    width: 20rem;
+}
+
+.control {
+    display: grid;
+    align-items: center;
+    margin-top: 3rem;
+    /* background-color: #34A2B3; */
+    height: 20rem;
+    grid-area: control;
+    grid-template-areas: 
+    
+    'control-img control-img'
+    'control-div contril-div';
+    /* width: fit-content; */
+
+    /* background-color: var(--back2); */
+}
+
+.control div{
+
+    margin-left: .1rem;
+}
+
+.control img{
+
+    margin: auto;
+}
+
+
+.home-project{
+
+    display: grid;
+    margin-top: 14rem;
+    gap: 2rem;
+    grid-template-areas: 
+    'project-h2 project-h2 project-h2 project-h2'
+    'img1 img1 img2 img2'
+    'img3 img3 img4 img4'
+    ;
+    grid-area: project;
+}
+
+.home-project h2{
+
+    margin-bottom: .1rem;
+    font-size: 2rem;
+}
+
+.subscribe{
+
+    display: grid;
+    margin-top: 5rem;
+    gap: 1.3rem;
+    align-items: center;
+
+    grid-area: subscribe;
+
+    grid-template-areas: 
+    'subscribe-h2 subscribe-h2'
+    'form form'
+    ;
+}
+
+
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1ff;
+    
+    margin-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.footer-social img{
+    width: 30px;
+    background-color: var(--primry);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+
+
+.footer-h3{
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    font-size: 1rem;
+}
+
+
+.footer-links{
+
+    text-decoration: none;
+    color: var(--inactive);
+    font-family: Poppins;
+    font-size: .5rem;
+}
+
+.footer-social h2{
+
+    font-family: Poppins-Bold;
+    color: var(--primry);
+    margin-bottom: 1rem;
+
+}
+
+.compny-help{
+
+    display: flex;
+    gap: 1rem;
+}
+.company a{
+
+    display: block;
+    margin: 10px;
+   
+}
+
+.get-help a{
+
+    display: block;
+    margin: 10px;
+
+}
+
+
+.support-app{
+
+    display: flex;
+    gap: 1rem;
+}
+
+.support a{
+
+    display: block;
+    margin: 10px;
+}
+
+.download a{
+
+    display: block;
+    margin: 10px;
+}
+
+
+}

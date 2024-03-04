@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Concert;
+    src: url(../fonts/ConcertOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(../fonts/Poppins-Black.ttf);
+}
