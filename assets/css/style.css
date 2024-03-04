@@ -96,10 +96,23 @@ nav{
     color:var(--inactive);
     list-style-type: none;
     font-weight: 600;
+    
+
+}
+.nav-tag{
+
+    text-decoration: none;
+    color:var(--inactive);
+    font-weight: 600;
 
 }
 
-.nav-home{
+.nav-contactus .nav-tag {
+
+    color: var(--white);
+}
+
+.nav-home .nav-tag{
 
     color: var(--active);
 }
@@ -667,6 +680,24 @@ footer{
         list-style-type: none;
         font-weight: 600;
         flex-shrink: 5;
+    }
+
+    .nav-tag{
+    
+        text-decoration: none;
+        color:var(--inactive);
+        font-weight: 600;
+    
+    }
+    
+    .nav-contactus .nav-tag {
+    
+        color: var(--white);
+    }
+    
+    .nav-home .nav-tag{
+    
+        color: var(--active);
     }
     
     .nav-logo{
