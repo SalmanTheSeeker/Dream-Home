@@ -27,7 +27,7 @@ body{
     /* background-color: #F5F6FA; */
     background-color: var(--back);
     /* padding: 0px 10%; */
-    width: 80vw;
+    width: 70vw;
     margin: auto;
 
     display: grid;
@@ -1075,6 +1075,9 @@ footer{
         margin:auto;
         margin-top: 2rem;
     }
+
+
+
     
     
     .secial-services{
@@ -1096,8 +1099,39 @@ footer{
     
     .secial-services div{
     
-        width: 20rem;
+        width: 90vw;
     }
+
+    .ripple-loader{
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .ripple-loader img{
+
+        margin: 10px;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .ripple-loader b{
+
+        font-size: 20px;
+    }
+
+    .ripple-loader p{
+
+        font-size: 15px;
+    }
+
+
+
+
+
     
     .control {
         display: grid;
