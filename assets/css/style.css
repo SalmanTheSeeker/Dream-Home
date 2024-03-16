@@ -1316,8 +1316,6 @@ footer{
         background-color: var(--back);
         width: 100vw;
         display: grid;
-        padding-left: 1rem;
-        padding-right: 1rem;
         grid-template-areas: 
         'heading heading heading heading'
         
@@ -1416,7 +1414,7 @@ footer{
     
     
     .secial-services{
-    
+        margin: auto;
         display: grid;
         grid-template-areas: 
         'services-h2 services-h2 services-h2'
@@ -1432,9 +1430,9 @@ footer{
         
     }
     
-    .secial-services div{
+    .secial-services .ripple-loader{
     
-        width: 20rem;
+        width: 80vw;
     }
     
     .control {
@@ -1455,12 +1453,14 @@ footer{
     
     .control div{
     
-        margin-left: .1rem;
+        margin: auto;
+        text-align: center;
     }
     
     .control img{
     
         margin: auto;
+    
     }
     
     
@@ -1472,15 +1472,24 @@ footer{
         grid-template-areas: 
         'project-h2 project-h2 project-h2 project-h2'
         'img1 img1 img2 img2'
-        'img3 img3 img4 img4'
+        /* 'img3 img3 img4 img4' */
         ;
         grid-area: project;
+    }
+
+    .proect-img3{
+        display: none;
+    }
+
+    .proect-img4{
+        display: none;
     }
     
     .home-project h2{
     
         margin-bottom: .1rem;
         font-size: 2rem;
+        text-align: center;
     }
     
     .subscribe{
@@ -1497,10 +1506,32 @@ footer{
         'form form'
         ;
     }
+
+    .subscribe h2{
+
+        text-align: center;
+       
+    }
+
+    .subscribe-form{
+
+        margin: auto;
+        padding-left: 7vw;
+        padding-right: 7vw;
+
+    }
+
+    .subscribe-form input{
+
+        width: 80vw;
+        
+
+    }
     
     
     footer{
         width: 100vw;
+        height: 40vh;
         display: flex;
         justify-content: space-between;
         background-color: #f1f1ff;
